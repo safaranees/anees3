@@ -1,38 +1,269 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
+    text-align: center;
+    overflow: hidden;
+  }
+  
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
   }
-  to {
-    transform: rotate(360deg);
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
   }
-}
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  #lib_intro{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+  #intro-jumbo{
+    margin-top: 175px;
+    background-color: #282c34;
+    color:/*#61dafb #f70300 */ aliceblue; 
+    width: 60%;
+    
+    
+     
+  }
+  #intro-jumbo p {
+    text-align: justify;
+  }
+  .login-container{
+    margin-top: 150px;
+    margin-bottom: 5%;
+  }
+  .login-logo{
+    position: relative;
+    margin-left: -41.5%;
+  }
+  .login-logo img{
+    position: absolute;
+    width: 20%;
+    margin-top: 19%;
+    background: #282726;
+    border-radius: 4.5rem;
+    padding: 5%;
+  }
+  .login-form-1{
+    padding: 9%;
+    background:#282726;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  }
+  .login-form-1 h3{
+    text-align: center;
+    margin-bottom:12%;
+    color:#fff;
+  }
+  .login-form-2{
+    padding: 9%;
+    background: #f05837;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  }
+  .login-form-2 h3{
+    text-align: center;
+    margin-bottom:12%;
+    color: #fff;
+  }
+  .btnSubmit{
+    font-weight: 600;
+    width: 50%;
+    color: #282726;
+    background-color: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    padding:2%;
+  }
+  .btnSubmit:hover{
+  background-color: cyan;
+  }
+  .btnForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .btnForgetPwd:hover{
+    text-decoration:none;
+    color:#fff;
+  }
+  
+  .sign-up{
+    width: 50%;
+    margin-left: 350px;
+    margin-top: 200px;
+  }
+  
+  .sign-up form{
+    background-color :#282c34;
+    padding: 50px;
+    color: aliceblue;
+  }
+  
+  .greeting{
+  
+    background-color: cyan;
+    margin-top: 150px;
+  }
+  .table_div{
+    margin: 70px;
+    /* display: flex;
+    align-items: center;
+   margin-left: 22%;
+    text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .book_table,th,td{
+    padding: 15px;
+  }
+  th,td{
+    border:1px solid ;
+  }
+  th{
+    background-color: steelblue;
+  }
+  tr:hover{
+    background-color: aliceblue;
+  }
+  #welcome{
+    margin-top: 66px;
+    background-color:#665605;
+    color: aliceblue;
+    text-align: left;
+    padding: 10px;
+    border-radius: 0px;
+  }
+  .table_div_mybooks{
+    margin: 150px;
+    /* display: flex;
+    align-items: center;
+   margin-left: 22%;
+    text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  /* @media only screen and (min-width: 520px) {
+     .book_table{
+      width: 50%;
+     
+    margin-left: 40px;
+    }
+  } */
+  
+  .displaySearch{
+    /* display: inline-block;  */
+    background-color: #d1ba44;
+    padding: 30px;
+    text-align: center;
+    color: black;
+    border: 3px double black;
+    border-radius: 5px;
+    margin-left: 573px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content; 
+  }
+  .hideSearch{
+    display: none;
+  }
+  .search_heading:hover{
+    cursor: pointer;
+  }
+  .search_heading{
+    display: inline-block;
+  }
+  #search_input{
+    display: inline;
+    width: fit-content;
+    margin:3px;
+  }
+  #search{
+    width: fit-content;
+  }
+  .select_div{
+    margin-left:473px;
+    background-color: #d1ba44 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:40px;
+    width:max-content;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  .table_div_mybooks_lib{
+    margin: 40px;
+    /* display: flex;
+    align-items: center;
+   margin-left: 22%;
+    text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-link{
+    font-size: large;
+  }
+  
+  #comment-intro{
+    margin-top: 120px;
+    margin-left: auto;
+  }
+  #comment-intro-body{
+    background-color:#02075d ;
+    color:ghostwhite
+  }
+  #comment{
+    width: fit-content;
+    height: fit-content;
+    background-color: 	#234DB8;
+    color: aliceblue;
+    margin-left: 200px;
+    
+    opacity: 1.3;
+    padding: 20px;
+  }
+  
+  #comment-form{
+  width: 600px;
+  height: 180px;
+  background-color: #02075d ;
+  color: ghostwhite;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  }
